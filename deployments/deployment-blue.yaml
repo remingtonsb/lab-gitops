@@ -6,7 +6,7 @@ metadata:
     app.kubernetes.io/component: blue
     app.kubernetes.io/instance: blue
   name: blue
-  namespace: customero-bluegreen
+  namespace: customer-bluegreen
 spec:
   replicas: 1
   selector:

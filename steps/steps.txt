@@ -101,3 +101,11 @@ oc set route-backends bluegreen blue=9 green=1
 
 3- Curl para o resultado
 while true; do curl $ROUTE/version ; echo ""; sleep 1; done
+
+
+
+############# Git Commands ####################################################
+
+git add --all .
+git commit -m "Second Commit"
+git push https://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@github.com/remingtonsb/lab-gitops/
