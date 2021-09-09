@@ -1,8 +1,0 @@
-resources:
-- deployment-blue.yaml
-- deployment-green.yaml
-- namespace.yaml
-- ocp-probe.yaml
-- ocp-service-blue.yaml
-- ocp-service-green.yaml
-- route-bluegreen.yaml
