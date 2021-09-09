@@ -8,7 +8,7 @@ metadata:
   name: green
   namespace: customer-bluegreen
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       deployment: green
@@ -23,7 +23,7 @@ spec:
         deployment: green
     spec:
       containers:
-      - image: quay.io/gpte-devops-automation/ocp-probe:v0.4
+      - image: quay.io/gpte-devops-automation/ocp-probe:v0.3
         name: green
         ports:
         - containerPort: 8080
