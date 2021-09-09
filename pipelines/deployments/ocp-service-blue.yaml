@@ -6,7 +6,7 @@ metadata:
     app.kubernetes.io/component: blue
     app.kubernetes.io/instance: blue
   name: blue
-  namespace: bradesco-bluegreen
+  namespace: customer-bluegreen
 spec:
   ports:
   - name: 8080-tcp
