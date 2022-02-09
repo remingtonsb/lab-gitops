@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: sample-spring-kotlin
-        image: image-registry.openshift-image-registry.svc:5000/bradcicd/sample-spring-kotlin:1.3.0
+        image: image-registry.openshift-image-registry.svc:5000/bradcicd/sample-spring-kotlin:1.4.0
         ports:
         - containerPort: 8080
