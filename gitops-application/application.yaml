@@ -5,7 +5,7 @@ metadata:
 spec:
   destination:
     name: ''
-    namespace: piotr-cicd
+    namespace: bradcicd
     server: 'https://kubernetes.default.svc'
   source:
     path: cicd/apps/sample-spring-kotlin
