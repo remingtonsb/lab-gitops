@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sample-spring-kotlin
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sample-spring-kotlin
+  template:
+    metadata:
+      labels:
+        app: sample-spring-kotlin
+    spec:
+      containers:
+      - name: sample-spring-kotlin
+        image: image-registry.openshift-image-registry.svc:5000/piotr-cicd/sample-spring-kotlin:1.3.0
+        ports:
+        - containerPort: 8080
