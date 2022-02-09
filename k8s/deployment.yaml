@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: sample-spring-kotlin
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: sample-spring-kotlin
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: sample-spring-kotlin
-        image: image-registry.openshift-image-registry.svc:5000/bradcicd/sample-spring-kotlin:1.4.0
+        image: image-registry.openshift-image-registry.svc:5000/bradcicd/sample-spring-kotlin:1.5.0
         ports:
         - containerPort: 8080
