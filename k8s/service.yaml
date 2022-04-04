@@ -8,3 +8,5 @@ spec:
     app: sample-spring-kotlin
   ports:
   - port: 8080
+    protocol: TCP
+    targetPort: 8080
