@@ -62,7 +62,7 @@ spec:
       - name: image-repo
         value: $(reversewords_quay_repo)
       - name: new-image-url
-        value: $(reversewords_quay_repo:$(params.imageTag))
+        value: $(reversewords_quay_repo)
       - name: source-branch
         value: "stage"
       - name: source-repo
