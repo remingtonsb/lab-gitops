@@ -54,6 +54,9 @@ spec:
   - name: apply-manifests
     taskRef:
       name: apply-manifests
+      params:
+      - name: namespace
+        value: $(params.namespace)
     workspaces:
     - name: source
       workspace: shared-workspace
@@ -68,5 +71,7 @@ spec:
       value: $(params.deployment-name)
     - name: IMAGE
       value: $(params.IMAGE)
+    - name: namespace
+      value: $(params.namespace)
     runAfter:
     - apply-manifests
