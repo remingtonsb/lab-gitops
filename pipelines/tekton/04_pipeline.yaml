@@ -54,9 +54,9 @@ spec:
   - name: apply-manifests
     taskRef:
       name: apply-manifests
-      params:
-      - name: namespace
-        value: $(params.namespace)
+    params:
+    - name: namespace
+      value: $(params.namespace)
     workspaces:
     - name: source
       workspace: shared-workspace
