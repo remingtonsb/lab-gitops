@@ -6,6 +6,9 @@ spec:
   workspaces:
   - name: shared-workspace
   params:
+  - name: namespace
+    type: string
+    description: Target namespace
   - name: deployment-name
     type: string
     description: name of the deployment to be patched
