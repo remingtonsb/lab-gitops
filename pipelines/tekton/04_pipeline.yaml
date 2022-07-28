@@ -48,3 +48,28 @@ spec:
       workspace: shared-workspace
     runAfter:
     - fetch-repository
+   
+  - name: update-stage-deployment-image
+    taskRef:
+      name: image-updater
+    runAfter:
+    - build-image
+    params:
+      - name: driver
+        value: "github"
+      - name: file-path
+        value: "deployment.yaml"
+      - name: image-repo
+        value: "<reversewords_quay_repo>"
+      - name: new-image-url
+        value: "<reversewords_quay_repo>:$(params.imageTag)"
+      - name: source-branch
+        value: "stage"
+      - name: source-repo
+        value: "<imageBuilder_sourcerepo>"
+      - name: update-key
+        value: "spec.template.spec.containers.0.image"
+      - name: insecure
+        value: "true"
+      - name: branch-generate-name
+        value: ""
