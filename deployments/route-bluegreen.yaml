@@ -3,7 +3,7 @@ kind: Route
 metadata:
   annotations:
   labels:
-    app: green
+    app: blue
   name: bluegreen
   namespace: customer-bluegreen
 spec:
