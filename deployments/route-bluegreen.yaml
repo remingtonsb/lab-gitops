@@ -3,7 +3,7 @@ kind: Route
 metadata:
   annotations:
   labels:
-    app: blue
+    app: green
   name: bluegreen
   namespace: customer-bluegreen
 spec:
@@ -11,4 +11,4 @@ spec:
     targetPort: 8080-tcp
   to:
     kind: Service
-    name: green
+    name: blue
