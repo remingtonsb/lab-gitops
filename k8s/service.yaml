@@ -3,7 +3,6 @@ kind: Service
 metadata:
   labels:
   name: sample-spring-kotlin
-  namespace: next
 spec:
   ports:
   - port: 8080
